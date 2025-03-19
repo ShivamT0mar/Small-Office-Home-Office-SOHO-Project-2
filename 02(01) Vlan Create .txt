@@ -1,0 +1,31 @@
+Switch(config)#vlan 10
+Switch(config-vlan)#name IT_Department
+Switch(config-vlan)#int range f0/1-8
+Switch(config-if-range)#switch access vlan 10
+Switch(config-if-range)#exit
+
+
+
+
+
+Switch(config)#vlan 20
+Switch(config-vlan)#name HR_Department
+Switch(config-vlan)#int range f0/9-16
+Switch(config-if-range)#switchport access vlan 20
+Switch(config-if-range)#exit
+
+
+
+
+
+Switch(config)#vlan 30
+Switch(config-vlan)#name Reception_Department
+Switch(config-vlan)#int range f0/17-24
+Switch(config-if-range)#switch access vlan 30
+Switch(config-if-range)#exit
+
+
+
+
+
+Switch(config-if)#switchport mode trunk

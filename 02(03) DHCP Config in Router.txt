@@ -1,0 +1,22 @@
+Router(config)#ip dhcp pool IT_Department
+Router(dhcp-config)#network 192.168.1.0 255.255.255.192
+Router(dhcp-config)#default-router 192.168.1.1
+Router(dhcp-config)#exit
+
+
+
+
+
+Router(config)#ip dhcp pool HR_Department
+Router(dhcp-config)#network 192.168.1.64 255.255.255.192
+Router(dhcp-config)#default-router 192.168.1.65
+Router(dhcp-config)#exit
+
+
+
+
+
+Router(config)#ip dhcp pool Reception_Department
+Router(dhcp-config)#network 192.168.1.128 255.255.255.192
+Router(dhcp-config)#default-router 192.168.1.129
+Router(dhcp-config)#exit

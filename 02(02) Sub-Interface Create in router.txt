@@ -1,0 +1,22 @@
+Router(config)#int g0/0.1
+Router(config-subif)#encapsulation dot1Q 10
+Router(config-subif)#ip address 192.168.1.1 255.255.255.192
+Router(config-subif)#exit
+
+
+
+
+
+Router(config)#int g0/0.2
+Router(config-subif)#encapsulation dot1Q 20
+Router(config-subif)#ip address 192.168.1.65 255.255.255.192
+Router(config-subif)#exit 
+
+
+
+
+
+Router(config)#int g0/0.3
+Router(config-subif)#encapsulation dot1Q 30
+Router(config-subif)#ip address 192.168.1.129 255.255.255.192
+Router(config-subif)#exit
